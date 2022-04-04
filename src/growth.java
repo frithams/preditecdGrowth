@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 class growth {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
 //y= a(1 +r)^x
 //a= initial value
 //r = growth rate
@@ -10,13 +10,13 @@ class growth {
         System.out.println("Let's Calculate Forecast Followers");
         System.out.println("This program uses y = a(1 +r)^x");
         System.out.println("Enter Initial Value a: (hint: number of current followers)");
-        int a = scan.nextInt();
+        int a = sc.nextInt();
 
         System.out.println("Enter growth rate r:");
-        double r = scan.nextDouble();
+        double r = sc.nextDouble();
 
         System.out.println("Enter time interval (in days)");
-        double x = scan.nextDouble();
+        double x = sc.nextDouble();
         System.out.println("==========================================");
         System.out.printf("%,d\n", (calcualteSubs(a, r, x)));
         System.out.println(" # of followers forecast in " + x + " days");
